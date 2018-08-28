@@ -20,7 +20,7 @@ COPY . .
 # Tests Better integration in TeamCity
 ENV TEAMCITY_PROJECT_NAME=fake
 # Launch tests
-RUN dotnet test tests/tests.csproj
+RUN dotnet test tests/tests.csproj --verbosity normal
 
 # publish
 RUN dotnet publish api/api.csproj -o /publish 
