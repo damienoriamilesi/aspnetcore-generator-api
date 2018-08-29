@@ -18,7 +18,7 @@ COPY . .
 #...except certain files
 
 # Tests Better integration in TeamCity
-ENV TEAMCITY_PROJECT_NAME=fake
+# ENV TEAMCITY_PROJECT_NAME=fake
 # Launch tests
 RUN dotnet test tests/tests.csproj --verbosity normal
 
